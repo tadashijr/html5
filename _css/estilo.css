@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body{
+    background-color: white;
+    color: rgba(0,0,0,1) 
+}
+P{
+    text-align: justify;
+    text-indent: 50PX;
+}
+/* FORMATAÇÃO DE IMAGENS COM LEGENDA */
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid #ffffff;
+    box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img{
+   width: 100%;
+   height: 100%;
+}
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 100%;
+}
+/* FORMATAÇÃO DO MENU */
+nav#menu {
+    display: block; /* Transforma meu menu em um bloco*/
+}
+nav#menu ul{ 
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; /* trasforma meu menu absoluto no site, se fosse relativo seria relativo a tag NAV */
+    top: -20px;
+    left: 200px;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+}
+nav#menu h1{
+    display: none;
+}
