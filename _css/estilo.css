@@ -1,5 +1,9 @@
 @charset "UTF-8";
-
+@font-face{ /* Adicionando uma fonte do seu pc */
+    font-family: 'FonteLogo';
+    src: url(/_fonts/bubblegum-sans-regular.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
 body{
     background-color: #dddddd;
     color: rgba(0,0,0,1) 
@@ -17,7 +21,7 @@ P{
 }
 header#cabecalho img#icone {
     position: absolute;
-    left: 1080px;
+    left: 800px;
     top: 70px;
 }
 header#cabecalho {
@@ -26,7 +30,7 @@ header#cabecalho {
     background: url(/_imagens/glass-logo-peq.jpg) no-repeat  0px 90px;
 }
 header#cabecalho h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;;
     font-size: 30pt;
     color: #606060;
     text-shadow:  1px 1px 1px rgba(0,0,0,0.5);
@@ -97,4 +101,25 @@ nav#menu a {
 }
 nav#menu a:hover{
     color: white;
+}
+/* Conteudo prioncipal */
+section#corpo{ 
+    display: block;
+    width: 620px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+/* Conteudo lateral */
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+}
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p{
+    text-align: center;
 }
