@@ -29,8 +29,8 @@ a:hover{
 }
 header#cabecalho img#icone {
     position: absolute;
-    left: 800px;
-    top: 70px;
+    left: 950px;
+    top: 90px;
 }
 header#cabecalho {
     border-bottom:  1px solid #606060;
@@ -86,7 +86,7 @@ nav#menu ul{
     text-transform: uppercase;
     position: absolute; /* trasforma meu menu absoluto no site, se fosse relativo seria relativo a tag NAV */
     top: -20px;
-    left: 840px;
+    left: 500px;
 }
 nav#menu li{
     display: inline-block;
@@ -208,5 +208,12 @@ footer#rodape{
     border-top: 1px solid #606060;
 }
 footer#rodape p{
+    font-size: 11pt;
     text-align: center;
+    font-style:italic;
+    font-weight: bold;
+    color: #000000;
+}
+footer#rodape p a{
+    color: #606060;  
 }
