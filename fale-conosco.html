@@ -35,35 +35,45 @@
                     <h3 class="direita">Atualizado em 01/Maio/2013</h3>
                 </hgroup>
             </header>
-            <p>
-                Identificação do Usuário
-                Nome:
-                Senha:
-                E-mail:
-                Sexo:
-                    - Masculino
-                    - Feminino
-                Data de Nascimento:
+            <form>
+                <fieldset id="usuario">
+                    <legend>Identificação do Usuário</legend>
+                <p>Nome: <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="nome completo"></p>
+                <p>Senha: <input type="password" name="tsenha" id="cnome" size="8" maxlength="8"></p>
+                <p>E-mail: <input type="email" name="temail" id="cemail"></p>
+                <fieldset id="SEXO">
+                    <legend>Sexo:</legend>
+                    <input type="radio" name="tsexo" id="cmasc"> <label for="cmasc">Masculino</label>
+                    <input type="radio" name="tsexo" id="cfem"> <label for="cfem">Feminino</label>
+                </fieldset>
+                <P>Data de Nascimento: <input type="date" name="tdata" id="cdata"></P>
+                </fieldset>
             
-            Endereço do Usuário
-                Logradouro:
-                Número:
-                Estado:
-                Cidade:
+                <fieldset id="endereco">
+                    <legend>Endereço do Usuário</legend>
+                    Logradouro:
+                    Número:
+                    Estado:
+                    Cidade:
+                </fieldset>
             
-            Mensagem do Usuário
-                Grau de Urgência:
-                Mensagem:
+                <fieldset id="mensagem">
+                    <legend>Mensagem do Usuário</legend>
+                    Grau de Urgência:
+                    Mensagem:
+                </fieldset>
             
-            Quero um Google Glass
-                Gostaria de adquirir um Google Glass quando disponível
-                Cor:
-                Quantidade:
-                Preço Total: R$
+                <fieldset id="pedido">
+                    <legend>Quero um Google Glass</legend>
+                    Gostaria de adquirir um Google Glass quando disponível
+                    Cor:
+                    Quantidade:
+                    Preço Total: R$
+                </fieldset>
             
             
             [BOTÃO ENVIAR]
-            </p>
+            </form>
             <footer id="rodape">
                 <p>Copyright 2013 - by Gustavo Guanabara<br/>
                 <a href="https://www.fb.com" target="blank">Facebook</a> | <a href="https://twitter.com" target="blank">Twitter</a></p>
